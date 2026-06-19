@@ -2,6 +2,9 @@
   "type": "header",
   "name": "t:sections.header-group.name",
   "sections": {
+    "custom-announcement-bar": {
+      "type": "custom-announcement-bar"
+    },
     "announcement": {
       "type": "announcement",
       "blocks": {
@@ -64,6 +67,7 @@
     }
   },
   "order": [
+    "custom-announcement-bar",
     "announcement",
     "header"
   ]
