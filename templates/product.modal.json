@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -67,10 +76,29 @@
         "areviews_stars_colors": "#f3c621",
         "areviews_write_reviews_botton_color": "#373737"
       }
+    },
+    "areviews_1781903373_d9f597": {
+      "type": "apps",
+      "blocks": {
+        "areviews_reviews_importer_areviews_display_reviews_24DBEA": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsDisplayReviews/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {
+            "hide_areviews_title_rating": false,
+            "areviews_theme_font": "inherit",
+            "areviews_stars_colors": "#f3c621",
+            "areviews_write_reviews_botton_color": "#373737"
+          }
+        }
+      },
+      "block_order": [
+        "areviews_reviews_importer_areviews_display_reviews_24DBEA"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "1629746450643786911"
+    "1629746450643786911",
+    "areviews_1781903373_d9f597"
   ]
 }

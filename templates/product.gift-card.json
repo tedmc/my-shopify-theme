@@ -1,1 +1,113 @@
-{"sections":{"main":{"type":"main-product","blocks":{"price":{"type":"price","settings":{}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{}},"description":{"type":"description","settings":{}},"variant_picker":{"type":"variant_picker","settings":{}},"inventory_status":{"type":"inventory_status","settings":{}},"share":{"type":"share","settings":{}},"sales_point":{"type":"sales_point","settings":{}},"tab":{"type":"tab","settings":{}},"text":{"type":"text","settings":{}},"separator":{"type":"separator","settings":{}},"contact":{"type":"contact","settings":{}}},"block_order":["description","separator","variant_picker","buy_buttons","share"],"settings":{}},"sub":{"type":"product-full-width","disabled":true,"settings":{}},"recently-viewed":{"type":"recently-viewed","disabled":true,"settings":{}},"1629746450643786911":{"type":"areviews-section","settings":{}}},"order":["main","sub","recently-viewed","1629746450643786911"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {}
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {}
+        },
+        "text": {
+          "type": "text",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description",
+        "separator",
+        "variant_picker",
+        "buy_buttons",
+        "share"
+      ],
+      "settings": {}
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {}
+    },
+    "1629746450643786911": {
+      "type": "areviews-section",
+      "settings": {}
+    },
+    "areviews_1781903370_d9f597": {
+      "type": "apps",
+      "blocks": {
+        "areviews_reviews_importer_areviews_display_reviews_80C614": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsDisplayReviews/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {
+            "hide_areviews_title_rating": false,
+            "areviews_theme_font": "inherit",
+            "areviews_stars_colors": "#f3c621",
+            "areviews_write_reviews_botton_color": "#373737"
+          }
+        }
+      },
+      "block_order": [
+        "areviews_reviews_importer_areviews_display_reviews_80C614"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "recently-viewed",
+    "1629746450643786911",
+    "areviews_1781903370_d9f597"
+  ]
+}
