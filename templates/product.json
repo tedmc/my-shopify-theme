@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -52,7 +61,7 @@
           "type": "tab",
           "settings": {
             "title": "Shipping information",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
             "page": ""
           }
         },
@@ -97,7 +106,7 @@
       "type": "featured-video",
       "settings": {
         "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "divider": false
       }
     },
@@ -105,7 +114,7 @@
       "type": "featured-video",
       "settings": {
         "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "divider": false
       }
     },
@@ -122,10 +131,10 @@
       "settings": {
         "subtitle": "Impressive",
         "title": "About your brand",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.</p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/video-slider-bg.webp",
+        "image": "shopify://shop_images/video-slider-bg.webp",
         "layout": "left",
         "height": 550,
         "framed": false,
@@ -137,12 +146,12 @@
     "text-and-image": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/4.jpg",
+        "image": "shopify://shop_images/4.jpg",
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
         "title": "Product specification",
-        "text": "<p><strong>Product Type<\/strong>: Lightsaber-themed chopsticks<\/p><p><strong>Material<\/strong>: Stainless steel (for chopsticks), plastic (for the light-up features)<\/p><p><strong>Dimensions<\/strong>: Typically 9-10 inches in length (varies slightly by model)<\/p><h4>Light Features:<\/h4><p><strong>Power Source<\/strong>: Batteries (usually included, often replaceable)<\/p><p><strong>On\/Off Switch<\/strong>: Located at the bottom of the chopsticks for easy activation<\/p><p><strong>Use<\/strong>: Functional chopsticks for eating, but with the added novelty of lightsaber aesthetics<\/p><p><strong>Design<\/strong>: Replica of iconic lightsaber designs from popular sci-fi franchises (e.g., Star Wars)<\/p><p><strong>Weight<\/strong>: Typically lightweight for ease of use<\/p><p><strong>Cleaning<\/strong>: Hand wash recommended; the LED section should not be submerged in water<\/p><p><strong>Age Group<\/strong>: Generally suitable for ages 12 and up due to small parts or battery components<\/p><p>These chopsticks make for a fun and interactive dining experience, especially for fans of sci-fi and Star Wars!<\/p>",
+        "text": "<p><strong>Product Type</strong>: Lightsaber-themed chopsticks</p><p><strong>Material</strong>: Stainless steel (for chopsticks), plastic (for the light-up features)</p><p><strong>Dimensions</strong>: Typically 9-10 inches in length (varies slightly by model)</p><h4>Light Features:</h4><p><strong>Power Source</strong>: Batteries (usually included, often replaceable)</p><p><strong>On/Off Switch</strong>: Located at the bottom of the chopsticks for easy activation</p><p><strong>Use</strong>: Functional chopsticks for eating, but with the added novelty of lightsaber aesthetics</p><p><strong>Design</strong>: Replica of iconic lightsaber designs from popular sci-fi franchises (e.g., Star Wars)</p><p><strong>Weight</strong>: Typically lightweight for ease of use</p><p><strong>Cleaning</strong>: Hand wash recommended; the LED section should not be submerged in water</p><p><strong>Age Group</strong>: Generally suitable for ages 12 and up due to small parts or battery components</p><p>These chopsticks make for a fun and interactive dining experience, especially for fans of sci-fi and Star Wars!</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -158,12 +167,12 @@
     "text-and-image2": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/1.jpg",
+        "image": "shopify://shop_images/1.jpg",
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
         "title": "Features",
-        "text": "<p><strong>Lightsaber-Inspired Design<\/strong>: The chopsticks are styled to resemble iconic lightsabers, with attention to detail in the hilt and blade design.<\/p><p><strong>LED Light Functionality<\/strong>: The chopsticks light up with LED lights that simulate the glow of a lightsaber when turned on, adding a cool and fun effect while eating.<\/p><p><strong>Multiple Color Options<\/strong>: Typically, the lights come in a variety of colors like red, blue, or sometimes green, mimicking the lightsaber colors from the Star Wars universe.<\/p><p><strong>Easy On\/Off Switch<\/strong>: A simple switch at the base of the chopsticks allows for easy activation of the LED light feature.<\/p><p><strong>Battery-Powered<\/strong>: The lights are powered by batteries (usually replaceable), allowing for use without needing to plug them in. Batteries are often included when purchased.<\/p><p><strong>Functional Chopsticks<\/strong>: Despite their novelty, these chopsticks are fully functional, so you can use them to eat just like regular chopsticks.<\/p><p><strong>Durable Build<\/strong>: Made from stainless steel for the chopstick tips, with plastic or other materials for the handle and light-up section, ensuring durability.<\/p><p><strong>Perfect for Themed Events<\/strong>: Great for Star Wars fans, cosplay events, or themed parties, combining practicality with fandom.<\/p><p><strong>Fun and Interactive<\/strong>: Ideal for making mealtime more exciting, especially for kids or anyone into sci-fi and pop culture.<\/p><p><strong>Easy to Clean<\/strong>: The chopsticks are designed for easy cleaning; just hand wash the utensil part (avoid submerging the LED section in water).<\/p>",
+        "text": "<p><strong>Lightsaber-Inspired Design</strong>: The chopsticks are styled to resemble iconic lightsabers, with attention to detail in the hilt and blade design.</p><p><strong>LED Light Functionality</strong>: The chopsticks light up with LED lights that simulate the glow of a lightsaber when turned on, adding a cool and fun effect while eating.</p><p><strong>Multiple Color Options</strong>: Typically, the lights come in a variety of colors like red, blue, or sometimes green, mimicking the lightsaber colors from the Star Wars universe.</p><p><strong>Easy On/Off Switch</strong>: A simple switch at the base of the chopsticks allows for easy activation of the LED light feature.</p><p><strong>Battery-Powered</strong>: The lights are powered by batteries (usually replaceable), allowing for use without needing to plug them in. Batteries are often included when purchased.</p><p><strong>Functional Chopsticks</strong>: Despite their novelty, these chopsticks are fully functional, so you can use them to eat just like regular chopsticks.</p><p><strong>Durable Build</strong>: Made from stainless steel for the chopstick tips, with plastic or other materials for the handle and light-up section, ensuring durability.</p><p><strong>Perfect for Themed Events</strong>: Great for Star Wars fans, cosplay events, or themed parties, combining practicality with fandom.</p><p><strong>Fun and Interactive</strong>: Ideal for making mealtime more exciting, especially for kids or anyone into sci-fi and pop culture.</p><p><strong>Easy to Clean</strong>: The chopsticks are designed for easy cleaning; just hand wash the utensil part (avoid submerging the LED section in water).</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -183,7 +192,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "Los Angeles, CA"
           }
@@ -192,7 +201,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "Los Angeles, CA"
           }
@@ -201,7 +210,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "Los Angeles, CA"
           }
@@ -247,6 +256,24 @@
         "areviews_stars_colors": "#f3c621",
         "areviews_write_reviews_botton_color": "#373737"
       }
+    },
+    "areviews_1781903326_d9f597": {
+      "type": "apps",
+      "blocks": {
+        "areviews_reviews_importer_areviews_display_reviews_45BF40": {
+          "type": "shopify://apps/areviews-reviews-importer/blocks/AreviewsDisplayReviews/ab0ec5fe-c95b-4fd6-bfb8-db2a30d0756f",
+          "settings": {
+            "hide_areviews_title_rating": false,
+            "areviews_theme_font": "inherit",
+            "areviews_stars_colors": "#f3c621",
+            "areviews_write_reviews_botton_color": "#373737"
+          }
+        }
+      },
+      "block_order": [
+        "areviews_reviews_importer_areviews_display_reviews_45BF40"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -261,6 +288,7 @@
     "product-recommendations",
     "recently-viewed",
     "collection-return",
-    "1629746450643786911"
+    "1629746450643786911",
+    "areviews_1781903326_d9f597"
   ]
 }
