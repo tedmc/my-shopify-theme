@@ -1,0 +1,30 @@
+<div class="custom-announcement-bar">
+  <p class="custom-announcement-bar__text">hello world</p>
+</div>
+
+<style>
+  .custom-announcement-bar {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 16px;
+    width: 100%;
+  }
+
+  .custom-announcement-bar__text {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 0.05em;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Announcement Bar",
+  "tag": "div",
+  "class": "custom-announcement-bar-wrapper",
+  "disabled_on": {
+    "groups": ["footer", "custom.popups"]
+  }
+}
+{% endschema %}
