@@ -1,0 +1,182 @@
+{{ "TIS_testimonials.css" | asset_url | stylesheet_tag }}
+<div class="testimonails">
+    <div class="page-width">
+        <div class="testi-wrapper">
+            <div class="side-box">
+                {% if section.settings.Testimonial_box_title != blank %}
+                    <div class="box-title">
+                       <h2> {{ section.settings.Testimonial_box_title }}</h2>
+                    </div>
+                {% endif %}
+                <div class="box-content">
+                    <div class="testi_badge">
+                        {% if section.settings.Testimonials_box_icon != blank %}
+                            <div class="box-img">
+                                {{ section.settings.Testimonials_box_icon | image_url: width:section.settings.Testimonials_box_icon.width | image_tag: width:section.settings.Testimonials_box_icon.width , height:section.settings.Testimonials_box_icon.height  }}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="testi_info">
+                        {% if section.settings.Testimonial_box_subheading != blank %}
+                            <div class="box-subhead">
+                                {{ section.settings.Testimonial_box_subheading }}
+                            </div>
+                        {% endif %}
+                        {% if section.settings.Box_desc != blank %}
+                            <div class="box-desc">
+                                {{ section.settings.Box_desc }}
+                            </div>
+                        {% endif %}
+                    </div>                    
+                </div>
+                <div class="box-star-btn">
+                    {% if section.settings.Button_text != blank %}
+                        <div class="ctn-btn">
+                            <a href="{{ section.settings.Button_url }}">{{ section.settings.Button_text }}</a>
+                        </div>
+                    {% endif %}
+                    {% comment %} {% if section.settings.review_star_img != blank %}
+                        <div class="box-star">
+                            {{ section.settings.review_star_img | image_url: width:section.settings.review_star_img.width | image_tag: width:section.settings.review_star_img.width , height:section.settings.review_star_img.height }}
+                        </div>
+                    {% endif %} {% endcomment %}
+                     <div class="box-star">
+                        {{ "stars.svg" | inline_asset_content }}
+                     </div>
+                </div>
+            </div>
+            <promotion-carousel
+                data-arrows="{{ section.settings.show_arrow }}"
+                data-auto_play="{{  section.settings.auto_play }}"
+                data-dots="{{  section.settings.dots }}"
+                data-fade="{{ section.settings.fade }}"
+                data-bars="true"
+                class="testimonail_slider">
+                    {% for block in section.blocks %}
+                    <div class="testimonial_item">                            
+                            {% if block.settings.User_img != blank %}
+                                <div class="user-img">
+                                    {{ block.settings.User_img | image_url: width:block.settings.User_img.width | image_tag: width:block.settings.User_img.width , height:block.settings.User_img.height  }}
+                                </div>
+                            {% endif %}
+                            {% if block.settings.Testimonials_desc != blank %}
+                                <div class="testi-desc">
+                                    {{ block.settings.Testimonials_desc }}
+                                </div>
+                            {% endif %}
+                            {% if block.settings.Name != blank %}
+                                <div class="clint-name">
+                                    {{ block.settings.Name }}
+                                </div>
+                            {% endif %}        
+                        </div>
+                    {% endfor %}
+            </promotion-carousel>
+            {% if section.settings.Testimonials_icon != blank %}
+                <div class="quote-icon">
+                    {{ section.settings.Testimonials_icon | image_url: width:section.settings.Testimonials_icon.width | image_tag: width:section.settings.Testimonials_icon.width , height: section.settings.Testimonials_icon.height  }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Testimonials Slider",
+  "settings": [
+    {
+        "type": "text",
+        "id": "Testimonial_box_title",
+        "label": "Testimonial box title"
+    },
+    {
+        "type": "text",
+        "id": "Testimonial_box_subheading",
+        "label": "Testimonial box subheading"
+    },
+    {
+        "type": "richtext",
+        "id": "Box_desc",
+        "label": "Box Description"
+    },
+    {
+        "type": "image_picker",
+        "id": "Testimonials_box_icon",
+        "label": "Testimonials Box Icon"
+    },
+    {
+        "type": "image_picker",
+        "id": "review_star_img",
+        "label": "Review Star Image"
+    },
+    {
+        "type": "text",
+        "id": "Button_text",
+        "label": "Button Text"
+    },
+    {
+        "type": "url",
+        "id": "Button_url",
+        "label": "Button Url"
+    },
+    {
+        "type": "checkbox",
+        "id": "show_arrow",
+        "default": true,
+        "label": "Show Arrow"
+    },      
+    {
+        "type": "checkbox",
+        "id": "auto_play",
+        "default": true,
+        "label": "Auto Play"
+    },
+    {
+        "type": "image_picker",
+        "id": "Testimonials_icon",
+        "label": "Testimonials Icon"
+    },
+    {
+        "type": "checkbox",
+        "id": "dots",
+        "label": "Page dots",        
+        "info": "Pagination dots for slider"
+    },
+    {
+        "type": "checkbox",
+        "id": "fade",
+        "label": "Text animation fade"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "image",
+      "settings": [
+        {
+          "type": "text",
+          "id": "Name",
+          "label": "Name"
+        },
+        {
+          "type": "richtext",
+          "id": "Testimonials_desc",
+          "label": "Testimonials Description"
+        },        
+        {
+          "type": "image_picker",
+          "id": "User_img",
+          "label": "User Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials Slider"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,51 @@
+/* collection page css start triocre 9-1-2024  */
+
+.collection-content {padding-block: 100px;}
+.collection-content  .collection-grid__wrapper .collection-filter .collection-filter__item.collection-filter__item--count{font-size: 14px;text-align: left;font-family: Star Jedi;line-height: 1.6;font-weight: 400;letter-spacing: .3px;text-overflow: ellipsis;}
+.collection-content .collection-sidebar__group .collapsible-trigger-btn{font-weight: 700;}
+.collection-content  .collection-grid__wrapper .grid--uniform{    margin-left: -60px;}
+.collection-content  .collection-grid__wrapper .grid--uniform .grid-product{    padding-left: 60px;    margin-bottom: 40px;}
+.collection-content  .collection-grid__wrapper .grid--uniform .grid-product .grid-product__content .grid__item-image-wrapper .grid-product__link .grid-product__title{    font-size: 20px;text-align: left;font-family: Star Jedi;line-height: 1.6;font-weight: 400;letter-spacing: .3px;text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.collection-content  .collection-grid__wrapper .grid--uniform .grid-product .grid-product__content .grid__item-image-wrapper .grid-product__link .grid-product__price {    font-size: 18px;line-height: 1.5;letter-spacing: 0px;color: var(--primary-color);    display: flex;flex-direction: row-reverse;justify-content: start;gap: 5px;}
+.collection-content .grid-product__price--original{    margin-right: 0;color: var(--colorTextBody);}
+.collection-content .grid__item-image-wrapper{position: relative;}
+.collection-content .grid-product__price--savings{    background-color: var(--primary-color);margin-left: 0;padding: 5.5px 17px;color: var(--black);font-size: 9px;line-height: 1.45;font-family: Star Jedi;    position: absolute;top: 12px;left: 0;}
+.collection-content .grid-product__meta{position: unset;}
+.collection-content .grid__image-ratio img.grid__image-contain{    border: 1px solid #707070;object-fit: cover;}
+.collection-content .grid-product__content .quick-product__btn{border-radius: 12px;font-size: 18px;transition: .5s ease color;}
+.collection-content .grid-product__content .quick-product__btn:before{    transition: .5s all ease;position: absolute;top: 0;left: 50%;right: 50%;bottom: 0;opacity: 0;content: "";background-color: var(--orange);z-index: -2;border-radius: 12px;}
+.collection-content .grid-product__content .quick-product__btn:hover{    color: var(--colorTextBody);transition: .5s ease color;}
+.collection-content .grid-product__content .quick-product__btn:hover:before{    transition: .5s all ease;left: 0;right: 0;opacity: 1;}
+.grid-product__price--savings .unit{font-family: var(--typeBasePrimary),var(--typeBaseFallback);}
+/* banner section css start tricore 11 9-1-2025 */
+
+.section-header--hero .section-header__title{    text-transform: lowercase;    text-shadow: 0px 11px 5px #000;}
+
+/* banner section css start tricore 11 9-1-end */
+[data-type_headers_align_text=true] .collection-hero__content .section-header{text-align: left;}
+@media (max-width:1440px) {
+    .collection-content{padding-block: 80px;}
+    .collection-content .collection-grid__wrapper .grid--uniform .grid-product{    padding-left: 40px;margin-bottom: 30px;}
+    .collection-content .collection-grid__wrapper .grid--uniform{margin-left: -40px;}
+}
+@media (max-width:1200px) {
+    .collection-content .collection-grid__wrapper .grid--uniform .grid-product{        padding-left: 20px;margin-bottom: 20px;width: 33.33%;}
+    .collection-content .collection-grid__wrapper .grid--uniform{margin-left: -20px;        display: flex;flex-wrap: wrap;}
+    .collection-content .collection-grid__wrapper .grid--uniform .grid-product .grid-product__content .grid__item-image-wrapper .grid-product__link .grid-product__title{font-size: 18px;}
+    .collection-content .collection-grid__wrapper .grid--uniform .grid-product .grid-product__content .grid__item-image-wrapper .grid-product__link .grid-product__price{font-size: 16px;}
+    .collection-content{padding-block: 60px;}
+}
+@media (max-width:991px) {
+    .collection-content .collection-grid__wrapper .grid--uniform .grid-product{width: 50%;}
+    .collection-content{padding-block: 40px;}
+    [data-type_headers_align_text=true] .section-header{text-align: center;}
+}
+@media (max-width: 600px) {
+    .collection-hero img{
+        object-position: 77%;
+    }
+}
+@media (max-width:400px) {
+    .collection-content .collection-grid__wrapper .grid--uniform .grid-product{width: 100%;}
+}
+/* collection page css end triocre 9-1-2024  */

@@ -1,0 +1,121 @@
+{% style %}
+   .video-slider{
+        background-image: url({{ section.settings.bg_img | image_url: width: section.settings.bg_img.width }});
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+{% endstyle %}
+{{ "TIS_video-slider.css" | asset_url | stylesheet_tag }}
+<section class="video-slider">
+    <div class="vid_content">
+        <div class="sec-header">
+            {% if section.settings.Heading != blank %}
+                <div class="main-heading">
+                <h2> {{ section.settings.Heading }}</h2>
+                </div>
+            {% endif %}
+            {% if section.settings.Sec_des != blank %}
+                <div class="sec-content">
+                    <p>{{ section.settings.Sec_des }}</p>
+                </div>
+            {% endif %}
+        </div>
+        <div class="vid_wrapper" data-carousel="{{ section.id }}">
+            {% for block in section.blocks %}
+                {% if block.settings.video != null %}
+                    <div class="vid-item">
+                        {{
+                            block.settings.video
+                            | video_tag:
+                            image_size: '1100x',
+                            autoplay: true,
+                            loop: true,
+                            controls: false,
+                            muted: true,
+                            autoplay: true,
+                            playsinline: true
+                        }}
+                    </div>
+                {% elsif block.settings.video_url != null %}                
+                    <div class="vid-item">
+                        {%- if block.settings.video_url.type == "youtube" -%}
+                            <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                        {%- endif -%}
+                        {%- if block.settings.video_url.type == "vimeo" -%}
+                            <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?color={{ settings.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                        {%- endif -%}
+                    </div>
+                    {% else %}
+                        <div class="vid-item">
+                            <img src="https://cdn.shopify.com/s/files/1/0279/4602/5027/files/video-banner.png" width="344" height="533" alt="video">
+                            <div class="play_btn">                            
+                                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="65" viewBox="0 0 66 65">
+                                    <g id="Group_4926" data-name="Group 4926" transform="translate(-0.116 0.41)">
+                                    <ellipse id="Ellipse_41" data-name="Ellipse 41" cx="33" cy="32.5" rx="33" ry="32.5" transform="translate(0.116 -0.41)" fill="#fff"/>
+                                    <path id="Polygon_1" data-name="Polygon 1" d="M13,0,26,22H0Z" transform="translate(47.116 19.59) rotate(90)"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                {% endif %}
+                {% comment %} <div class="video-wrapper">
+                    <video controls="" width="100%">
+                    <source src="{{ block.settings.Video_url }}" type="video/mp4">
+                    </video>
+                    <img src="https://cdn.shopify.com/s/files/1/0279/4602/5027/files/play-btn.webp?v=1733382530" class="play-btn">
+                </div> {% endcomment %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<script>
+    window.onload = function() {
+        setupSlide("div[data-carousel='{{section.id}}']");
+    };
+</script>
+{% schema %}
+{
+    "name": "Lightsaber Videos",
+    "settings": [
+        {
+            "type": "inline_richtext",
+            "id": "Heading",
+            "label": "Section Heading"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "Sec_des",
+            "label": "Section Description"
+        },
+        {
+            "type": "image_picker",
+            "id": "bg_img",
+            "label": "Background Image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "Action-video",
+            "name": "Action Video",
+            "settings": [
+                {
+                    "type": "video_url",
+                    "accept": ["vimeo", "youtube"],
+                    "id": "video_url",
+                    "label": "Video Url"
+                },
+                {
+                    "type": "video",
+                    "id": "video",
+                    "label": "File Video"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Lightsaber Videos"
+        }
+    ]
+}
+{% endschema %}

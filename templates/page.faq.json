@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "faq-0": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Frequently Asked Question",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "title": "Can I cancel my order after I've made a purchase?",
+            "text": "<p>Yes! We offer immediate order cancellation between 24 and 48 hours of your order being placed.<\/p>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "title": "How do I return or exchange an item?",
+            "text": "<p>Our return policy is effective for 30 days from the time your order is delivered.<br\/>Please refer to our returns & refunds policy for more information on how to initiate the returns process.<\/p>"
+          }
+        },
+        "faq-4": {
+          "type": "question",
+          "settings": {
+            "title": "What types of Payment methods do you accept?",
+            "text": "<p>We accept Visa, Mastercard, Discover, & American Express.<\/p>"
+          }
+        },
+        "question_rNwaPp": {
+          "type": "question",
+          "settings": {
+            "title": "What are your shipping options?",
+            "text": "<p>Currently, we only offer one shipping option. For more information, please visit the Shipping FAQ page.<\/p>"
+          }
+        },
+        "question_EnCdx8": {
+          "type": "question",
+          "settings": {
+            "title": "What if the item I ordered arrives broken or damaged?",
+            "text": "<p>We’ll make it up to you. You can request a refund, or an exchange\/store credit. Please contact us on our contact us page.<\/p>"
+          }
+        },
+        "question_XJJrfJ": {
+          "type": "question",
+          "settings": {
+            "title": "Where do you ship from?",
+            "text": "<p>Primarily we ship out from our warehouse in the United States. If the item you've purchased is out of inventory in your nearest location, we'll send it directly from our production lines at the same delivery times as stated in our shipping section.<\/p>"
+          }
+        },
+        "question_mrRCGf": {
+          "type": "question",
+          "settings": {
+            "title": "I am missing items from my order?",
+            "text": "<p>Depending on the items you have ordered and our current stock at different locations, they may have been shipped out from different warehouse locations.<br\/>We fully guarantee and ensure that your package will arrive; if you find that your package has NOT arrived as per the timeline outlined on our Shipping FAQ page, please contact us using the FORCE!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-0",
+        "faq-1",
+        "faq-2",
+        "faq-4",
+        "question_rNwaPp",
+        "question_EnCdx8",
+        "question_XJJrfJ",
+        "question_mrRCGf"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq"
+  ]
+}

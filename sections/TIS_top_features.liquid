@@ -1,0 +1,74 @@
+{{ "TIS_top-featured.css" | asset_url | stylesheet_tag }}
+<section class="top-features-section">
+    <div class="page-width">
+        <div class="sec-header">
+            {% if section.settings.Small_heading != blank %}
+                <div class="small-heading">
+                    {{ section.settings.Small_heading }}
+                </div>
+            {% endif %}
+            {% if section.settings.Heading != blank %}
+                <div class="main-heading">
+                   <h2> {{ section.settings.Heading }}</h2>
+                </div>
+            {% endif %}
+        </div>
+        <div class="features-content">
+            {% for block in section.blocks %}
+                <div class="feature_item">
+                {% if block.settings.Features_img != blank %}
+                    <div class="features-img">
+                        {{ block.settings.Features_img | image_url: width:block.settings.Features_img.width | image_tag: width:block.settings.Features_img.width , height:block.settings.Features_img.height  }}
+                    </div>
+                {% endif %}
+                {% if block.settings.Img_des != blank %}
+                    <div class="features-des">
+                        {{ block.settings.Img_des }}
+                    </div>
+                {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Top Features",
+    "settings": [
+        {
+            "type": "text",
+            "id": "Small_heading",
+            "label": "Small heading"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "Heading",
+            "label": "Section Heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "Top-features",
+            "name": "Top Features",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "Features_img",
+                    "label": "Features Image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "Img_des",
+                    "label": "Description"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Top Features"
+        }
+    ]
+}
+{% endschema %}

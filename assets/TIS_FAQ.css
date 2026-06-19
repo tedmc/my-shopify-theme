@@ -1,0 +1,20 @@
+.faq-page{    padding-block: 100px;margin: 0;}
+.faq-page .index-section--faq{margin: 0;}
+.faq-page .index-section--faq .h2{text-transform: lowercase;margin: 0 0 80px;}
+.faq-page .page-width div{border-bottom: 1px solid #fff;}
+.faq-page .page-width div div{border: none;}
+.faq-page .collapsible-trigger__icon--circle{    border-color: #fff;}
+.faq-page .collapsible-trigger--inline .collapsible-trigger__icon{    left: auto;right: 0;}
+.faq-page .collapsible-trigger--inline{width: 100%;font-size: 18px;line-height: 1.6;    font-family: Star Jedi;font-weight: 400;    text-transform: lowercase;padding: 20px 20px 20px 0;}
+@media (max-width:1440px) {
+    .faq-page{    padding-block: 80px;}
+}
+@media (max-width:1200px) {
+    .faq-page{    padding-block: 60px;}
+    .faq-page .index-section--faq .h2{margin-bottom: 60px;}
+}
+@media (max-width:767px) {
+    .faq-page{    padding-block: 40px;}
+    .faq-page .collapsible-trigger--inline{    font-size: 16px;padding: 15px 15px 15px 0;}
+    .faq-page .index-section--faq .h2{margin-bottom: 30px;}
+}

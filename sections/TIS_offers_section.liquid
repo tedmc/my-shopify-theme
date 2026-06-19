@@ -1,0 +1,140 @@
+{{ "TIS_promotion-slider.css" | asset_url | stylesheet_tag }}
+<section class="promotion_slide" id="promo-{{ section.id }}">    
+        <div class="offers-image-header">
+            {% if section.settings.Small_heading != blank %}
+            <div class="small-heading">
+                {{ section.settings.Small_heading }}
+            </div>
+            {% endif %}
+            {% if section.settings.Heading != blank %}
+            <div class="heading-title">
+                {{ section.settings.Heading }}
+            </div>
+            {% endif %}
+        </div>
+
+        <promotion-carousel
+            data-arrows="{{ section.settings.show_arrow }}"
+            data-auto_play="{{  section.settings.auto_play }}"            
+            data-fade="{{ section.settings.fade }}"
+            data-dots="{{  section.settings.dots }}"
+            class="popular-treatments__slider"
+        >
+          {% for block in section.blocks %}
+            {% if block.settings.banner != blank %}
+            <div class="promotion_card">
+              {% if block.settings.discount != blank %}
+              <div class="offer-badge">
+                <span>
+                  {{ block.settings.discount }}
+                </span>
+              </div>              
+              {% endif %}
+              {{ block.settings.banner | image_url: width:block.settings.banner.width |image_tag: width:block.settings.banner.width , height:block.settings.banner.height, alt: block.settings.heading  }}              
+              <div class="promo_info">
+                <div class="promo-cnt">
+                  {% if block.settings.heading != blank %}
+                    <p>{{ block.settings.heading }}</p>
+                    {% endif %}
+                    {% if block.settings.subheading != blank %}
+                    <p>{{ block.settings.subheading }}</p>
+                    {% endif %}
+                    <div class="promo_btn">
+                      {% if block.settings.btntxt != blank %}
+                        <a href="{{block.settings.btnlnk}}">
+                          {{ block.settings.btntxt }}
+                        </a>
+                      {% endif %}
+                    </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+          {% endfor %}    
+        </promotion-carousel>    
+</section>
+
+{% schema %}
+    {
+      "name": "Offer Slider",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "default": true,
+          "label": "Show Arrow"
+        },      
+        {
+          "type": "checkbox",
+          "id": "auto_play",
+          "default": true,
+          "label": "Auto Play"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "Small_heading",
+            "label": "Small Heading"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "Heading",
+            "label": "Section Heading"
+        },
+        {
+            "type": "checkbox",
+            "id": "dots",
+            "label": "Page dots",        
+            "info": "Pagination dots for slider"
+        },
+        {
+            "type": "checkbox",
+            "id": "fade",
+            "label": "Text animation fade"
+        }
+      ],
+      "blocks": [
+        {
+            "type": "Offers-image",
+            "name": "Offers Image",
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "banner",
+                "label": "Banner image"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Banner name"                            
+            },
+            {
+                "type": "text",
+                "id": "subheading",
+                "label": "Banner subheading"                            
+            },
+            {
+                "type": "text",
+                "id": "btntxt",
+                "label": "Button text"                            
+            },
+            {
+                "type": "url",
+                "id": "btnlnk",
+                "label": "Button link"                            
+            },
+            {
+                "type": "text",
+                "id": "discount",
+                "label": "Offer value"                            
+            }
+              
+            ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Offer Slider"
+        }
+      ]
+    }
+    {% endschema %}

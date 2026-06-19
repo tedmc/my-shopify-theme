@@ -1,0 +1,256 @@
+.prd_list {
+    padding-block: 60px 91px;
+}
+
+.section-heading h2 {
+    margin-bottom: 34px;
+}
+
+.section-heading p {
+    max-width: 774px;
+    margin-inline: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.28;
+    margin-bottom: 0px;
+}
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+.prd_rw {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+}
+
+.prd_list .page-width {
+    max-width: 1660px;
+}
+
+.prd_col {
+    flex: 0 0 calc(33.33% - 31px);
+    max-width: 33.33%;
+}
+
+.prd_card {
+    padding: 43px 40px 15px;
+    border: 1px solid var(--yellow);
+}
+
+.prd_info {
+    margin-top: 16px;
+}
+
+.prd_info_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prd_name {
+    font-size: 15px;
+    line-height: 1.67;
+}
+
+.prd_info_top .prd_size {
+    font-size: 16px;
+    line-height: 1.63;
+    color: var(--primary-color);
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+    text-transform: unset;
+}
+
+.prd_info_top {
+    margin-bottom: 5px;
+}
+
+.prd_prc {
+    margin-bottom: 6px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.sale-price {
+    color: #818181;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main-price {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.prd_btn {
+    display: block;
+    border: 1px solid var(--yellow);
+    border-top: 0px;
+    padding: 12px 0;
+    text-align: center;
+    font-family: "Star Jedi";
+    font-size: 18px;
+    background-color: transparent;
+    color: var(--colorTextBody);
+    width: 100%;
+    opacity: 1;
+    position: unset;
+    transform: unset;
+    transition: unset;
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: 1s color ease;
+}
+
+.prd_btn:hover {
+    color: var(--black);
+    transition: 1s color ease;
+}
+.span-wrapper {
+    height: 100%;
+    position: absolute;
+    inset:0 -2px -4px 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.span-wrapper span {
+    background-color: var(--primary-color);
+    width: 30%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.8) translateY(125%) translateZ(0);
+    transition: all 1s ease;
+}
+
+/* The Three Individual Span Tag */
+.s1 {
+    left: -10%;
+    transition-delay: 0ms;
+}
+.s2 {
+    left: 30%;
+    transition-delay: 500ms;
+}
+.s3 {
+    left: 70%;
+    transition-delay: 800ms;
+}
+
+.prd_btn:hover .span-wrapper span {
+    transform: scale(1.7) translateY(0) translateZ(0);
+}
+
+.supports-touch .quick-product__btn.prd_btn{
+    display: block;
+}
+
+@media (max-width: 1350px) {
+    .prd_card {
+        padding: 23px 20px 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .prd_rw {
+        gap: 20px;
+    }
+
+    .prd_col {
+        flex: 0 0 calc(33.33% - 14px);
+    }
+}
+
+@media (max-width: 991px) {
+    .prd_col {
+        flex: 0 0 calc(50% - 10px);
+        max-width: 50%;
+    }
+    .prd_list {
+        padding-block: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .prd_card {
+        padding: 10px;
+    }
+
+    .sale-price,
+    .prd_info_top .prd_size {
+        font-size: 14px;
+    }
+
+    .prd_name {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .main-price {
+        font-size: 16px;
+    }
+
+    .prd_prc {
+        gap: 5px;
+    }
+
+    .prd_info_top {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .star svg {
+        width: 80px;
+        height: auto;
+    }
+
+    .prd_btn {
+        padding-block: 8px;
+        font-size: 14px;
+    }
+    .prd_list {
+        padding-block: 30px;
+    }
+    .section-heading h2{
+        margin-bottom: 10px;
+    }
+    .section-heading{
+        margin-bottom: 25px;
+    }
+    .section-heading p{
+        font-size: 16px;
+    }
+    .prd_rw {
+        flex-wrap: nowrap;        
+        overflow: auto;
+    }
+    .prd_col {
+        flex: 0 0 calc(70% - 10px);
+        max-width: 70%;
+    }
+    .supports-touch .quick-product__btn.prd_btn{
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .prd_info_top, .prd_prc {
+        justify-content: center;
+    }
+    .prd_info{
+        text-align: center;
+    }
+}
+/* @media (max-width: 400px) {
+    .prd_col {
+        flex: 0 0 calc(50% - 5px);
+        max-width: 50%;
+    }
+    .prd_rw {
+        gap: 10px;
+    }
+} */

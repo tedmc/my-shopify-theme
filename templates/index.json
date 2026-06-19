@@ -1,0 +1,554 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 74,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#000000",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Banner_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-mob-1.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "slideshow-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#000000",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Banner_2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-mob-2.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_rArbUd": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Banner_3.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-mob-3.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_6q89zX": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Banner_4.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-mob-4.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_NeBaJn": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Banner_5.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banner-mob-5.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "slideshow-1",
+        "image_rArbUd",
+        "image_6q89zX",
+        "image_NeBaJn"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "tis_scrolling_logo_q4MRwN": {
+      "type": "TIS_scrolling-logo",
+      "blocks": {
+        "logo_Vaaw8d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/people.png"
+          }
+        },
+        "logo_END98f": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/today.svg"
+          }
+        },
+        "logo_HzFV4M": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Money.svg"
+          }
+        },
+        "logo_7ntTQL": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ET.svg"
+          }
+        },
+        "logo_k6YizV": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/huffpost.svg"
+          }
+        },
+        "text_NF9zdk": {
+          "type": "text",
+          "settings": {
+            "info": "\"Best gift ideas for someone who loves collecting novelty items!\""
+          }
+        },
+        "text_4C7hWF": {
+          "type": "text",
+          "settings": {
+            "info": "\"Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum\""
+          }
+        },
+        "text_AzFhJq": {
+          "type": "text",
+          "settings": {
+            "info": "\"Lightsaber Chopsticks\""
+          }
+        }
+      },
+      "block_order": [
+        "logo_Vaaw8d",
+        "logo_END98f",
+        "logo_HzFV4M",
+        "logo_7ntTQL",
+        "logo_k6YizV",
+        "text_NF9zdk",
+        "text_4C7hWF",
+        "text_AzFhJq"
+      ],
+      "settings": {
+        "heading": "",
+        "direction": "left",
+        "speed": 50,
+        "fade": true,
+        "auto_play": true,
+        "dots": false,
+        "show_arrow": false
+      }
+    },
+    "tis_product_info_yGdJjQ": {
+      "type": "TIS_product_info",
+      "settings": {
+        "heading": "Lightsaber Chopsticks Reusable",
+        "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "prd_lst": [
+          "copy-of-lightsaber-chopsticks-light-up-star-wars-led-glowing-light-saber-chop-sticks-reusable-sushi-lightup-sabers-1-pair",
+          "lightsaber-chopsticks-light-up-star-wars-led-glowing-light-saber-chop-sticks-reusable-sushi-lightup-sabers-red-and-blue-2-pairs",
+          "chopsabers-lightsaber-chopsticks-light-up-star-wars-led-glowing-light-saber-chop-sticks-reusable-sushi-lightup-sabers-4-pairs-frost-tip"
+        ]
+      }
+    },
+    "tis_offers_section_Bxwzi7": {
+      "type": "TIS_offers_section",
+      "blocks": {
+        "offers_image_a4RMzC": {
+          "type": "Offers-image",
+          "settings": {
+            "banner": "shopify:\/\/shop_images\/Group_6268.png",
+            "heading": "Chop Sabers",
+            "subheading": "Lorem ipsum dolor sit amet",
+            "btntxt": "Shop Now",
+            "btnlnk": "shopify:\/\/products\/copy-of-lightsaber-chopsticks-light-up-star-wars-led-glowing-light-saber-chop-sticks-reusable-sushi-lightup-sabers-1-pair",
+            "discount": "50% OFF"
+          }
+        },
+        "offers_image_tcKDdr": {
+          "type": "Offers-image",
+          "settings": {
+            "banner": "shopify:\/\/shop_images\/Group_6272.png",
+            "heading": "Chop Sabers",
+            "subheading": "Lorem ipsum dolor sit amet",
+            "btntxt": "Shop Now",
+            "btnlnk": "shopify:\/\/products\/lightsaber-chopsticks-light-up-star-wars-led-glowing-light-saber-chop-sticks-reusable-sushi-lightup-sabers-red-and-blue-2-pairs",
+            "discount": "50% OFF"
+          }
+        },
+        "offers_image_iC4dmW": {
+          "type": "Offers-image",
+          "settings": {
+            "banner": "shopify:\/\/shop_images\/Group_6280.png",
+            "heading": "Chop Sabers",
+            "subheading": "Lorem ipsum dolor sit amet",
+            "btntxt": "Shop Now",
+            "btnlnk": "shopify:\/\/products\/lightsaber-chopsticks-light-up-star-wars-led-glowing-light-saber-chop-sticks-reusable-sushi-lightup-sabers-4-pairs",
+            "discount": "50% OFF"
+          }
+        },
+        "offers_image_DiDNWV": {
+          "type": "Offers-image",
+          "settings": {
+            "banner": "shopify:\/\/shop_images\/offer_img-sticks.webp",
+            "heading": "Chop Sabers",
+            "subheading": "Lorem ipsum dolor sit amet",
+            "btntxt": "Shop Now",
+            "btnlnk": "shopify:\/\/collections\/all",
+            "discount": "50% off"
+          }
+        },
+        "offers_image_Gm9qYb": {
+          "type": "Offers-image",
+          "settings": {
+            "banner": "shopify:\/\/shop_images\/Group_6288.png",
+            "heading": "Chop Sabers",
+            "subheading": "Lorem ipsum dolor sit amet",
+            "btntxt": "Shop Now",
+            "btnlnk": "shopify:\/\/products\/lightsaber-keychain-light-up-led-star-wars-glowing-light-saber-key-chain-lightup-sabers-8-color-modes-green-blue-red-baby-blue-pink-yellow-white-rainbow",
+            "discount": "50% OFF"
+          }
+        },
+        "offers_image_VM3KjX": {
+          "type": "Offers-image",
+          "settings": {
+            "banner": "shopify:\/\/shop_images\/Group_6272.png",
+            "heading": "Chop Sabers",
+            "subheading": "Lorem ipsum dolor sit amet",
+            "btntxt": "Shop Now",
+            "btnlnk": "shopify:\/\/products\/lightsaber-chopsticks-reusable-gift-box-and-soft-carry-case-bonus-free-millennium-falcon-keychain-bottle-opener",
+            "discount": "50% OFF"
+          }
+        }
+      },
+      "block_order": [
+        "offers_image_a4RMzC",
+        "offers_image_tcKDdr",
+        "offers_image_iC4dmW",
+        "offers_image_DiDNWV",
+        "offers_image_Gm9qYb",
+        "offers_image_VM3KjX"
+      ],
+      "settings": {
+        "show_arrow": false,
+        "auto_play": true,
+        "Small_heading": "",
+        "Heading": "",
+        "dots": false,
+        "fade": false
+      }
+    },
+    "tis_top_features_9g4HB4": {
+      "type": "TIS_top_features",
+      "blocks": {
+        "top_features_JXjh8E": {
+          "type": "Top-features",
+          "settings": {
+            "Features_img": "shopify:\/\/shop_images\/Group_6132.png",
+            "Img_des": "<p>BPA Free<\/p>"
+          }
+        },
+        "top_features_UyqJYq": {
+          "type": "Top-features",
+          "settings": {
+            "Features_img": "shopify:\/\/shop_images\/Group_6137.png",
+            "Img_des": "<p>LED Lights<\/p>"
+          }
+        },
+        "top_features_TbqDMF": {
+          "type": "Top-features",
+          "settings": {
+            "Features_img": "shopify:\/\/shop_images\/battery-change.png",
+            "Img_des": "<p>CHANGEABLE BATTERIES<\/p>"
+          }
+        },
+        "top_features_JkDej7": {
+          "type": "Top-features",
+          "settings": {
+            "Features_img": "shopify:\/\/shop_images\/FDA.png",
+            "Img_des": "<p>FDA Approved<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "top_features_JXjh8E",
+        "top_features_UyqJYq",
+        "top_features_TbqDMF",
+        "top_features_JkDej7"
+      ],
+      "settings": {
+        "Small_heading": "",
+        "Heading": "Top Features"
+      }
+    },
+    "tis_lightsaber_action_NacpnJ": {
+      "type": "TIS_lightsaber_action",
+      "blocks": {
+        "action_video_U3r7EK": {
+          "type": "Action-video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "video": "shopify:\/\/files\/videos\/vid_1.mp4"
+          }
+        },
+        "action_video_bmfbjE": {
+          "type": "Action-video",
+          "settings": {
+            "video_url": "",
+            "video": "shopify:\/\/files\/videos\/vid_2.mp4"
+          }
+        },
+        "action_video_HzJMkF": {
+          "type": "Action-video",
+          "settings": {
+            "video_url": "",
+            "video": "shopify:\/\/files\/videos\/vid_3.mp4"
+          }
+        },
+        "action_video_4iQpEE": {
+          "type": "Action-video",
+          "settings": {
+            "video_url": "",
+            "video": "shopify:\/\/files\/videos\/vid_1.mp4"
+          }
+        },
+        "action_video_qfC8ic": {
+          "type": "Action-video",
+          "settings": {
+            "video_url": "",
+            "video": "shopify:\/\/files\/videos\/vid_2.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "action_video_U3r7EK",
+        "action_video_bmfbjE",
+        "action_video_HzJMkF",
+        "action_video_4iQpEE",
+        "action_video_qfC8ic"
+      ],
+      "settings": {
+        "Heading": "See Lightsaber Chopsticks in Action",
+        "Sec_des": "It's Time To Discover Your Destiny & Save The Galaxy From Boring Chopsticks! If you are looking for a pair of fun chopsticks that will impress all your friends, make every sushi night unique and add a dash of The Force to your dinner table... look no further!",
+        "bg_img": "shopify:\/\/shop_images\/video-slider-bg.webp"
+      }
+    },
+    "featured_collection_3DhMwq": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "other Best Seller",
+        "Sec_des": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<\/p>",
+        "home_featured_products": "on-sale-now",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "tis_testimonials_GEFTqU": {
+      "type": "TIS_testimonials",
+      "blocks": {
+        "image_mbKtaW": {
+          "type": "image",
+          "settings": {
+            "Name": "Jackie Dean",
+            "Testimonials_desc": "<p>These are really awesome! They're not only fun but they can help keep your baby entertained. My husband used these with ramen and one of them ended up bending in the middle because the ramen was just too hot. Needless to say, we don't use these for ramen anymore. We still love them though!<\/p>",
+            "User_img": "shopify:\/\/shop_images\/Ellipse_51_5fe5a80f-d509-4819-ab29-db5029711363.png"
+          }
+        },
+        "image_eahUHE": {
+          "type": "image",
+          "settings": {
+            "Name": "Jackie Dean",
+            "Testimonials_desc": "<p>These are really awesome! They're not only fun but they can help keep your baby entertained. My husband used these with ramen and one of them ended up bending in the middle because the ramen was just too hot. Needless to say, we don't use these for ramen anymore. We still love them though!<\/p>",
+            "User_img": "shopify:\/\/shop_images\/Ellipse_51_5fe5a80f-d509-4819-ab29-db5029711363.png"
+          }
+        },
+        "image_XMwaaH": {
+          "type": "image",
+          "settings": {
+            "Name": "Jackie Dean",
+            "Testimonials_desc": "<p>These are really awesome! They're not only fun but they can help keep your baby entertained. My husband used these with ramen and one of them ended up bending in the middle because the ramen was just too hot. Needless to say, we don't use these for ramen anymore. We still love them though!<\/p>",
+            "User_img": "shopify:\/\/shop_images\/Ellipse_51_5fe5a80f-d509-4819-ab29-db5029711363.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_mbKtaW",
+        "image_eahUHE",
+        "image_XMwaaH"
+      ],
+      "settings": {
+        "Testimonial_box_title": "What They Are Talking About Chop Sabers",
+        "Testimonial_box_subheading": "Over 2 Million Units Sold!",
+        "Box_desc": "<p>Join the millions who have experienced the quality and innovation of our products. Thank you for your trust and support!<\/p>",
+        "Testimonials_box_icon": "shopify:\/\/shop_images\/Group_6187.png",
+        "review_star_img": "shopify:\/\/shop_images\/Group_6293.png",
+        "Button_text": "Contact us",
+        "Button_url": "shopify:\/\/pages\/contact-us-using-the-force",
+        "show_arrow": true,
+        "auto_play": true,
+        "Testimonials_icon": "shopify:\/\/shop_images\/Quotemarks-left_782a6da3-2b53-4292-b243-3a45ed468881.png",
+        "dots": true,
+        "fade": false
+      }
+    },
+    "tis_chopstick_looking_qAkYj4": {
+      "type": "TIS_chopstick_looking",
+      "blocks": {
+        "color_vision_g8mbkX": {
+          "type": "Color-vision",
+          "settings": {
+            "color": "#ea2830",
+            "Color_name": "Red"
+          }
+        },
+        "color_vision_mD4H9B": {
+          "type": "Color-vision",
+          "settings": {
+            "color": "#00abec",
+            "Color_name": "Sky Blue"
+          }
+        },
+        "color_vision_gUVtga": {
+          "type": "Color-vision",
+          "settings": {
+            "color": "#006838",
+            "Color_name": "Green"
+          }
+        },
+        "color_vision_y6Ri4d": {
+          "type": "Color-vision",
+          "settings": {
+            "color": "#f6ea32",
+            "Color_name": "Yellow"
+          }
+        },
+        "color_vision_6WqTmy": {
+          "type": "Color-vision",
+          "settings": {
+            "color": "#ee5a29",
+            "Color_name": "Orange"
+          }
+        },
+        "color_vision_8bbkx4": {
+          "type": "Color-vision",
+          "settings": {
+            "color": "#2e318f",
+            "Color_name": "Blue"
+          }
+        },
+        "color_vision_HEJCBR": {
+          "type": "Color-vision",
+          "settings": {
+            "color": "#e90089",
+            "Color_name": "Pink"
+          }
+        },
+        "color_vision_Rqj37N": {
+          "type": "Color-vision",
+          "settings": {
+            "color": "#c576f6",
+            "Color_name": "Purple"
+          }
+        }
+      },
+      "block_order": [
+        "color_vision_g8mbkX",
+        "color_vision_mD4H9B",
+        "color_vision_gUVtga",
+        "color_vision_y6Ri4d",
+        "color_vision_6WqTmy",
+        "color_vision_8bbkx4",
+        "color_vision_HEJCBR",
+        "color_vision_Rqj37N"
+      ],
+      "settings": {
+        "Back_img": "shopify:\/\/shop_images\/Group_6316.png",
+        "Side_img": "shopify:\/\/shop_images\/B07S17T8XC-removebg-preview.png",
+        "Sec_title": "These are the chopsticks you're looking for",
+        "Sec_desc": "<p>The Awesomest Lightsaber Light Up Chopsticks and Lightsaber Keychains with 8 color changing modes available. Multiple Colors and Models To Choose From!<\/p>",
+        "Button_text": "Buy now",
+        "Button_url": "shopify:\/\/products\/copy-of-lightsaber-chopsticks-light-up-star-wars-led-glowing-light-saber-chop-sticks-reusable-sushi-lightup-sabers-8-color-modes"
+      }
+    },
+    "blog_posts_rcffYh": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Featured on Article Section",
+        "Blog_desc": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<\/p>",
+        "blog": "news",
+        "post_limit": 4,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "square",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "tis_scrolling_logo_q4MRwN",
+    "tis_product_info_yGdJjQ",
+    "tis_offers_section_Bxwzi7",
+    "tis_top_features_9g4HB4",
+    "tis_lightsaber_action_NacpnJ",
+    "featured_collection_3DhMwq",
+    "tis_testimonials_GEFTqU",
+    "tis_chopstick_looking_qAkYj4",
+    "blog_posts_rcffYh"
+  ]
+}

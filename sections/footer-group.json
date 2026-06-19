@@ -1,0 +1,110 @@
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "footer-promotions": {
+      "type": "footer-promotions",
+      "blocks": {
+        "footer-promotions-0": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "footer-promotions-1": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "footer-promotions-2": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "footer-promotions-0",
+        "footer-promotions-1",
+        "footer-promotions-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "hide_homepage": false
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-1": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "footer",
+            "container_width": 17
+          }
+        },
+        "menu_KbFUyf": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "get-help",
+            "container_width": 25
+          }
+        },
+        "custom_VyKciK": {
+          "type": "custom",
+          "settings": {
+            "show_footer_title": true,
+            "title": "Customer Service",
+            "text": "<p>Monday - Friday 9am - 5pm PST <\/p><p>Phone\/Text: <a href=\"tel:801200399\" title=\"tel:801200399\">(801) 200-3995<\/a> <\/p><p><a href=\"mailto:lightsaberchopstick@gmail.com\" title=\"lightsaberchopstick@gmail.com\">lightsaberchopstick@gmail.com<\/a><\/p>",
+            "container_width": 25
+          }
+        },
+        "footer-0": {
+          "type": "logo_social",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image-removebg-preview_8.png",
+            "desktop_logo_height": 170,
+            "container_width": 30
+          }
+        }
+      },
+      "block_order": [
+        "footer-1",
+        "menu_KbFUyf",
+        "custom_VyKciK",
+        "footer-0"
+      ],
+      "settings": {
+        "toolbar_social": true,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_currency_flags": false,
+        "show_payment_icons": true,
+        "show_copyright": true,
+        "copyright_text": "May the Force Be With You....Always!"
+      }
+    }
+  },
+  "order": [
+    "footer-promotions",
+    "footer"
+  ]
+}

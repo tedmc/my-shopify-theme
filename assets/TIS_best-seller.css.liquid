@@ -1,0 +1,201 @@
+.featured_cl .page-width{
+    max-width: 1480px;
+  }
+  .featured_cl{
+    padding-block: 85px 41px;
+  }
+  .sec-des{
+    margin-top: 41px;
+    max-width: 774px;
+    margin-inline:auto; 
+  }
+  .sec-des p{
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0px;
+  }
+  .featured_cl .section-header{
+     margin-bottom: 112px;
+  }
+  .featured_cl .grid{
+    margin-left: -80px;
+  }
+  .featured_cl .grid__item{
+    padding-left: 80px;
+  }
+  .featured_cl .grid__image-ratio img{
+   border: 1px solid #707070;
+    object-fit: cover;
+  }
+  .grid-product__meta{
+    margin-top: 24px;
+   padding-top: 0px;
+ }
+ .grid-product__meta .grid-product__title--heading{
+   font-size: 20px;
+   text-align: left;
+   font-family: "Star Jedi";
+   line-height: 1.6;
+   font-weight: normal;
+   letter-spacing: 0.3px;
+   text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+ }
+ .grid-product__price{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 5px;
+}
+.grid-product__price--savings{
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+.featured_cl .grid-product__meta{
+  position: unset;
+}
+.grid-product__price--savings{
+  background-color: var(--primary-color);
+  margin-left: 0px;
+  padding:5.5px 17px;
+  color: var(--black);
+  font-size: 9px;
+  line-height: 1.45;
+  font-family: "Star Jedi";
+}
+.grid-product__price--savings .unit{
+  font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+}
+.grid-product__price{
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: var(--primary-color);
+}
+.grid-product__price--original{
+  margin-right: 0px;
+  color: var(--colorTextBody);
+}
+.grid-product__content .quick-product__btn{
+  border-radius: 12px;
+  font-size: 18px;
+  transition: 0.5s ease color;    
+}
+.grid-product__content .quick-product__btn:hover{
+  color: var(--white);
+  transition: 0.5s ease color;
+}
+.grid-product__content .quick-product__btn:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: var(--orange);
+  z-index: -2;
+  border-radius: 12px;
+}
+.grid-product__content .quick-product__btn:hover:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.modal--quick-shop .modal__centered-content{
+  scrollbar-width: thin;
+  }
+  .product__photos{
+    position: sticky;
+    top: 0;
+  }
+.modal__close {
+  right: 10px;
+}
+@media (max-width: 1440px) {
+  .featured_cl .grid{
+    margin-left: -40px;
+  }
+  .featured_cl .grid__item{
+    padding-left: 40px;
+  }
+  .featured_cl .section-header {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 1200px) {
+  .featured_cl .grid{
+    margin-left: -20px;
+  }
+  .featured_cl .grid__item{
+    padding-left: 20px;
+  }
+  .grid-product__meta .grid-product__title--heading {
+    font-size: 18px;
+  }
+  .featured_cl .section-header {
+    margin-bottom: 60px;  
+  }
+  .grid-product__price {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .featured_cl .grid{
+    margin-left: -15px;
+  }
+  .featured_cl .grid__item{
+    padding-left: 15px;
+  }
+  .grid-product__meta .grid-product__title--heading {
+    font-size: 16px;
+  }
+  .featured_cl .section-header {
+    margin-bottom: 25px;  
+  }
+  .grid-product__price {
+    font-size: 16px;
+  }
+  .grid-product__meta{
+    margin-top: 15px;
+  }
+  .featured_cl{
+    padding-block: 0px;
+  }
+  .sec-des p {
+    font-size: 16px;
+  }
+  .sec-des {
+    margin-top: 20px;
+  }
+  .grid-overflow-wrapper .grid__item {    
+    flex: 0 0 80vw;
+  }
+  .grid-product__content .quick-product__btn{
+    position: unset;
+    display: block;
+    opacity: 1;
+  }
+  .product-section.is-modal .product__photos--beside {
+    width: 70%;
+    margin: 0 auto;
+  }  
+}
+
+@media (max-width: 480px) {
+  .featured_cl .small--one-half{
+    width: 100%;
+  }
+  .modal--square .modal__centered-content {   
+    max-height: 95vh;
+  }
+}

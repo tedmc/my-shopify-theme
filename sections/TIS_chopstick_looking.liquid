@@ -1,0 +1,123 @@
+{{ "TIS_chopstick_looking.css" | asset_url | stylesheet_tag }}
+{% style %}
+  .chopstick_details {           
+
+           background-image: {% if section.settings.Back_img !=blank %}
+           url({{ section.settings.Back_img | image_url: width: section.settings.Back_img.width }});
+               {% else %}
+           linear-gradient(90deg, #000428, #004e92);
+               {% endif %}
+       }
+{% endstyle %}
+<section class="chopstick_details" id="stcik-{{ section.id }}">
+    <div class="page-width"> 
+        <div class="stcik_rw">
+        {% if section.settings.Side_img != blank %}
+            <div class="sticks_img">
+                {{ section.settings.Side_img | image_url: width:section.settings.Side_img.width | image_tag: width:section.settings.Side_img.width , height:section.settings.Side_img.height  }}
+            </div>
+        {% endif %}
+        <div class="stcik_cnt">
+            {% if section.settings.Sec_title != blank %}
+                <div class="stcik_title">
+                    <h2>{{ section.settings.Sec_title }}</h2>
+                </div>
+            {% endif %}
+            {% if section.settings.Sec_desc != blank %}
+                <div class="stcik_subtitle">
+                    {{ section.settings.Sec_desc }}
+                </div>
+            {% endif %}
+            <div class="colors">
+                {% for block in section.blocks %}
+                    <div class="color-item">
+                        {% comment %} {% if block.settings.Color_img != blank %}
+                            {{ block.settings.Color_img | image_url: width:block.settings.Color_img.width | image_tag: width:block.settings.Color_img.width , height:block.settings.Color_img.height  }}
+                        {% endif %} {% endcomment %}
+                        {% if block.settings.color != blank %}
+                            <span class="sticks-color" style="background-color: {{ block.settings.color }};"></span>
+                        {% endif %}
+                        {% if block.settings.Color_name != blank %}
+                            <p class="color-name">{{ block.settings.Color_name }}</p>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="stick_btn">
+                {% if section.settings.Button_text != blank %}
+                    <a href="{{ section.settings.Button_url }}" class="btn border_btn btn--secondary">
+                        {{ section.settings.Button_text }}
+                        <div class="bdr_btn_wrap">
+                            <span class="b1"></span>
+                            <span class="b2"></span>
+                            <span class="b3"></span>
+                        </div>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "Chopstick Looking",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "Back_img",
+            "label": "Background Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "Side_img",
+            "label": "Side Image"
+        },
+        {
+            "type": "text",
+            "id": "Sec_title",
+            "label": "Section Title"
+        },
+        {
+            "type": "richtext",
+            "id": "Sec_desc",
+            "label": "Section Description"
+        },
+        {
+            "type": "text",
+            "id": "Button_text",
+            "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "Button_url",
+            "label": "Button Url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "Color-vision",
+            "name": "Color Vision",
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "color",
+                    "label": "Select color"
+                },
+                {
+                    "type": "text",
+                    "id": "Color_name",
+                    "label": "Color Name"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Chopstick Looking"
+        }
+    ]
+}
+{% endschema %}

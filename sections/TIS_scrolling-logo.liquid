@@ -1,0 +1,141 @@
+{{ "TIS_scrolling-logo.css" | asset_url | stylesheet_tag }}
+{% style %}
+  .scrolling-text--{{ section.id }} {
+    --move-speed: {{ section.settings.speed }}s;
+  }  
+{% endstyle %}
+<section class="scrolling-logo" id="scrolling-{{ section.id }}">
+    {% if section.settings.heading != blank %}
+    <div class="heading">
+        
+            <h2>{{ section.settings.heading }}</h2>        
+    </div>
+{% endif %} 
+    <div class="scrolling-text scrolling-text--{{ section.id }}">
+        <div class="scrolling-text__inner scrolling-text__inner--{{ section.settings.direction }}" aria-hidden="true" tabindex="0">
+          {% for i in (1..5) %}
+            <div class="logo_slide">
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when "logo" %}
+                      {% if block.settings.logo != blank %}
+                          <div class="logo_img">
+                              {{ block.settings.logo | image_url: width: block.settings.logo.width | image_tag: width: block.settings.logo.width, height: block.settings.logo.height, alt: block.settings.logo.alt }}
+                          </div>
+                      {% endif %}
+                    {% endcase %}
+                {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <promotion-carousel
+        data-arrows="{{ section.settings.show_arrow }}"
+        data-auto_play="{{  section.settings.auto_play }}"
+        data-dots="{{  section.settings.dots }}"
+        data-fade="{{ section.settings.fade }}"
+        data-bars="true"
+        class="text_slider">
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when "text" %}
+                  {% if block.settings.info != blank %}
+                    <div class="scrol-logo-info">
+                      <p>{{ block.settings.info }}</p>
+                    </div>       
+                  {% endif %}                  
+              {% endcase %}              
+            {% endfor %}
+    </promotion-carousel>
+      
+</section>
+{% schema %}
+{
+  "name": "Scrolling Logo",
+  "settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Section Heading"
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "label": "t:sections.marquee.settings.direction.label",
+      "default": "left",
+      "options": [
+        {
+          "label": "t:sections.marquee.settings.direction.options.left.label",
+          "value": "left"
+        },
+        {
+          "label": "t:sections.marquee.settings.direction.options.right.label",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "t:sections.marquee.settings.speed.label",
+      "default": 200,
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "unit": "s"
+    },
+    {
+      "type": "checkbox",
+      "id": "fade",
+      "label": "Text animation fade"
+    },
+    {
+        "type": "checkbox",
+        "id": "auto_play",
+        "default": true,
+        "label": "Auto play"
+    },    
+    {
+        "type": "checkbox",
+        "id": "dots",
+        "label": "Page dots",        
+        "info": "Pagination dots for slider"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrow",
+      "default": true,
+      "label": "Show Arrow"
+    }   
+  ],
+  "blocks": [
+    {
+        "type": "logo",
+        "name": "Logo",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "logo",
+                "label": "Brnad Logo"
+            },
+        ]
+    },
+    {
+      "type": "text",
+      "name": "Info",
+      "settings": [
+          {
+              "type": "text",
+              "id": "info",
+              "label": "Information about product"
+          },
+      ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "Scrolling Logo"
+    }
+  ]
+}
+{% endschema %}

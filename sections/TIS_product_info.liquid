@@ -1,0 +1,100 @@
+{{ "TIS_prd-featured.css" | asset_url | stylesheet_tag }}
+<section class="prd_list" id="prd-lst-{{ section.id }}">
+    <div class="page-width">
+        {% if section.settings.heading != blank %}
+        <div class="section-heading">
+            <h2>{{ section.settings.heading }}</h2>
+            {% if section.settings.info != blank %}
+                <p>{{ section.settings.info }}</p>
+            {% endif %}
+        </div>
+        {% endif %}
+        <div class="prd_rw">
+            {% if section.settings.prd_lst != blank %}
+                {% for  product in section.settings.prd_lst %}
+                                  
+                    <div class="prd_col grid-product prd_item grid-product__has-quick-shop" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+                        {% comment %} {%- render 'product-grid-item',
+                            product: product,                                                        
+                            quick_shop_enable: settings.quick_shop_enable                            
+                          -%} {% endcomment %}
+                            {% assign preview_image = product.featured_media.preview_image %}
+                        <div class="prd_card">
+                            <div class="prd_img">
+                                <a href="{{ product.url }}">
+                                {%- render 'image-element',
+                                    img: preview_image,
+                                    classes: "prd_main_img",
+                                    sizes: "auto",                                    
+                                    widths: '360, 540, 720, 900, 1080',
+                                  -%}
+                                  </a>
+                            </div>
+                            <div class="prd_info">
+                                <a href="{{ product.url }}">
+                                    <div class="prd_info_top">
+                                        {% comment %} <h4>{{ product.title }}</h4> {% endcomment %}
+                                         {% if product.metafields.custom.tagline != blank %}
+                                            <span class="prd_name">{{ product.metafields.custom.tagline }}</span>
+                                         {% endif %}
+                                        <h4 class="prd_size">
+                                            {{ product.variants.first.option1 }}
+                                        </h4>
+                                    </div>
+                                    <div class="prd_prc">
+                                        {% if product.price < product.compare_at_price %}
+                                            <span class="sale-price"> <s> {{ product.compare_at_price | money }} </s></span> 
+                                            <span class="main-price">{{ product.price | money }}</span> 
+                                        {% else %}
+                                            <span class="main-price">{{ product.price | money }}</span> 
+                                        {% endif %}
+                                    </div>
+                                    <div class="star">
+                                        {{ "stars.svg" | inline_asset_content }}
+                                    </div>
+                                </a>                                
+                            </div>
+                        </div>
+                        <button class="prd_btn quick-product__btn js-modal-open-quick-modal-{{ product.id }}">
+                            Add To Cart
+                            <div class="span-wrapper">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                                <span class="s3"></span>
+                            </div>
+                        </button>
+                        {%- render 'quick-shop-modal', product: product -%}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</section>    
+  
+{% schema %}
+    {
+        "name": "Feature Products",        
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Section heading"
+            },
+            {
+                "type": "textarea",
+                "id": "info",
+                "label": "Section subheading"
+            },
+            {
+                "type": "product_list",
+                "id": "prd_lst",
+                "label": "Select Product"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Feature Products"
+            }
+        ]
+    }
+{% endschema %}

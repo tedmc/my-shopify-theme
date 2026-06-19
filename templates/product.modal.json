@@ -1,0 +1,76 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price_rBkDYR": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_49GUR3": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point_UqncHp": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "inventory_status_fgzUDy": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "buy_buttons_QGiFAr": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "price_rBkDYR",
+        "variant_picker_49GUR3",
+        "sales_point_UqncHp",
+        "inventory_status_fgzUDy",
+        "buy_buttons_QGiFAr"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "1629746450643786911": {
+      "type": "areviews-section",
+      "settings": {
+        "hide_areviews_title_rating": false,
+        "areviews_theme_font": "inherit",
+        "areviews_stars_colors": "#f3c621",
+        "areviews_write_reviews_botton_color": "#373737"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1629746450643786911"
+  ]
+}

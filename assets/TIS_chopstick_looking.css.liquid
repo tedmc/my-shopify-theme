@@ -1,0 +1,121 @@
+.chopstick_details{
+    background-size: cover;
+}
+.prd_details .page-width{
+    max-width: 1513px;
+}
+
+.image-section img {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;    
+    max-width: 385px;
+    margin-inline: auto;
+}   
+
+.stcik_rw{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .chopstick_details{
+    padding-block: 30px 54px;
+  }
+  .stcik_subtitle{
+    margin-block: 40px;  
+  }
+  .stcik_subtitle p{
+      max-width: 560px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.667;
+    margin-bottom: 0px;
+    margin-inline: auto;
+  }
+  .color-item span{
+    width: 81px;
+    height: 81px;
+    border-radius: 100%;
+    display: block;
+    position: relative;
+    margin-inline: auto;
+  }
+  .color-item span:before{
+    content: "";
+    border: 1px solid var(--colorTextBody);  
+    top: 3px;
+    left: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 100%;
+    position: absolute;
+  }
+  .color-item p{
+    margin-bottom: 0px;
+    text-align: center;  
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .stick_btn{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+@media (max-width: 1600px) {
+    .color-item span{
+        width: 75px;
+        height: 75px;
+    }
+}
+@media (max-width: 1400px) {
+    .color-item span{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media (max-width: 1200px) {
+    .color-item span{
+        width: 50px;
+        height: 50px;
+    }
+    .stcik_subtitle {
+        margin-block: 20px;
+    }
+    .stick_btn{
+        margin-top: 20px;
+    }
+    .colors {    
+        gap: 15px;
+        max-width: 295px;
+    }
+    .color-item p {        
+        font-size: 16px;
+    }
+    .stcik_subtitle p {        
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stcik_rw{
+        flex-direction: column;
+    }
+    .color-item span {
+        width: 40px;
+        height: 40px;
+    }
+    .color-item p, .stcik_subtitle p {
+        font-size: 14px;
+    }
+    .chopstick_details {
+        padding-block: 30px;
+    }
+}
